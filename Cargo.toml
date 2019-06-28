@@ -1,0 +1,16 @@
+[package]
+name = "kvmi-sys"
+version = "0.1.0"
+authors = ["Mathieu Tarral <mathieu.tarral@protonmail.com>"]
+edition = "2018"
+links = "kvmi"
+repository = "https://github.com/Wenzel/kvmi-sys"
+readme = "README.md"
+keywords = ["KVM", "KVMi"]
+description = "Rust bindings for KVMi"
+license = "GPL-3.0-only"
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.49.2"

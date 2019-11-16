@@ -15,6 +15,7 @@ fn main() {
         // The input header we would like to generate
         // bindings for.
         .header("src/wrapper.h")
+        .derive_copy(true)
         // Finish the builder and generate the bindings.
         .generate()
         // Unwrap the Result and panic on failure.

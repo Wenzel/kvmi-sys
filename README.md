@@ -1,6 +1,6 @@
 # kvmi-sys
 
-[![Build Status](https://travis-ci.com/Wenzel/kvmi-sys.svg?branch=master)](https://travis-ci.com/Wenzel/kvmi-sys)
+![](https://github.com/Wenzel/kvmi-sys/workflows/Build/badge.svg)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 > Rust bindings for kvmi library

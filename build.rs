@@ -16,6 +16,7 @@ fn main() {
         // bindings for.
         .header("src/wrapper.h")
         .derive_copy(true)
+        .derive_debug(true)
         // Finish the builder and generate the bindings.
         .generate()
         // Unwrap the Result and panic on failure.

@@ -3,12 +3,15 @@ name = "kvmi-sys"
 version = "0.1.0"
 authors = ["Mathieu Tarral <mathieu.tarral@protonmail.com>"]
 edition = "2018"
-links = "kvmi"
-repository = "https://github.com/Wenzel/kvmi-sys"
+description = "Rust FFI bindings for libkvmi"
 readme = "README.md"
-keywords = ["KVM", "KVMi"]
-description = "Rust bindings for KVMi"
+homepage = "https://github.com/Wenzel/kvmi-sys"
+repository = "https://github.com/Wenzel/kvmi-sys"
 license = "GPL-3.0-only"
+keywords = ["KVM", "KVMi", "introspection", "VMI"]
+categories = ["external-ffi-bindings"]
+links = "kvmi"
+build = "build.rs"
 
 [dependencies]
 

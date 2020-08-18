@@ -1,6 +1,6 @@
 [package]
 name = "kvmi-sys"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Mathieu Tarral <mathieu.tarral@protonmail.com>"]
 edition = "2018"
 description = "Rust FFI bindings for libkvmi"
@@ -17,3 +17,4 @@ build = "build.rs"
 
 [build-dependencies]
 bindgen = "0.51.1"
+pkg-config = "0.3.18"

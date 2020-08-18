@@ -3,14 +3,13 @@
 ![](https://github.com/Wenzel/kvmi-sys/workflows/Build/badge.svg)
 ![100% unsafe](https://img.shields.io/badge/unsafe-100%25-blue.svg)
 
-> Rust FFI bindings for libkvmi library
+> Unsafe Rust FFI bindings for libkvmi library
 
 ## Table of Contents
 
 - [Overview](#overview)
 - [Requirements](#requirements)
-- [Maintainers](#maintainers)
-- [Contributing](#contributing)
+- [Build](#build)
 - [License](#license)
 
 ## Overview

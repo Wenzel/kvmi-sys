@@ -1,9 +1,9 @@
 # kvmi-sys
 
 ![](https://github.com/Wenzel/kvmi-sys/workflows/Build/badge.svg)
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+![100% unsafe](https://img.shields.io/badge/unsafe-100%25-blue.svg)
 
-> Rust bindings for kvmi library
+> Rust FFI bindings for libkvmi library
 
 ## Table of Contents
 
@@ -15,24 +15,20 @@
 
 ## Overview
 
-This crate will compile bindings for KVM `libkvmi.so`.
+This crate will compile _unsafe_ Rust bindings for the VM introspection library [libkvmi](https://github.com/bitdefender/libkvmi)
 
 Check `libkvmi.h` header for the API.
 
 ## Requirements
 
-- `cargo`
-- `rustc`
+- `Rust` toolchain
+- `clang`
 
-## Maintainers
+## Build
 
-[@Wenzel](https://github.com/Wenzel)
-
-## Contributing
-
-PRs accepted.
-
-Small note: If editing the Readme, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
+~~~
+cargo build
+~~~
 
 ## License
 

@@ -1,6 +1,7 @@
 # kvmi-sys
 
 ![](https://github.com/Wenzel/kvmi-sys/workflows/Build/badge.svg)
+[![Crates.io](https://img.shields.io/crates/v/kvmi-sys.svg)](https://crates.io/crates/kvmi-sys)
 ![100% unsafe](https://img.shields.io/badge/unsafe-100%25-blue.svg)
 
 > Unsafe Rust FFI bindings for libkvmi library

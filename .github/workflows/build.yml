@@ -10,12 +10,31 @@ jobs:
         os: [ubuntu-16.04, ubuntu-18.04]
 
     steps:
-    - name: install libkvmi
-      run: |
-        git clone https://github.com/KVM-VMI/kvm --branch kvmi --depth 1
-        cd kvm/tools/kvm/kvmi
-        make
-        sudo make install
-    - uses: actions/checkout@v1
-    - name: build KVM driver
-      run: cargo build
+      - name: install stable Rust toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          default: true
+
+      - name: clone libkvmi
+        uses: actions/checkout@v2
+        with:
+          repository: bitdefender/libkvmi
+          path: libkvmi
+          ref: kvmi-v6
+
+      - name: build and install libkvmi
+        run: |
+          ./bootstrap
+          ./configure
+          make
+          sudo make install
+        working-directory: libkvmi
+
+      - uses: actions/checkout@v1
+
+      - name: build libkvmi bindings
+        uses: actions-rs/cargo@v1
+        with:
+          command: build

@@ -15,7 +15,7 @@
 
 ## Overview
 
-This crate will compile _unsafe_ Rust bindings for the VM introspection library [libkvmi](https://github.com/bitdefender/libkvmi)
+This crate will compile _unsafe_ Rust bindings for the VM introspection library [libkvmi](https://github.com/bitdefender/libkvmi) (_v6_)
 
 Check `libkvmi.h` header for the API.
 

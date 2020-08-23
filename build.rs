@@ -4,7 +4,6 @@ use std::env;
 use std::path::PathBuf;
 
 fn main() {
-
     // what library to link with
     println!("cargo:rustc-link-lib=kvmi");
 
@@ -17,6 +16,7 @@ fn main() {
         .header("src/wrapper.h")
         .derive_copy(true)
         .derive_debug(true)
+        .derive_default(true)
         // Finish the builder and generate the bindings.
         .generate()
         // Unwrap the Result and panic on failure.
